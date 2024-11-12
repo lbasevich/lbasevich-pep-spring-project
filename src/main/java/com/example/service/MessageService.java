@@ -76,13 +76,3 @@ public class MessageService {
                     return messageRepository.findAllByPostedBy(accountId).get();
                 }
 }
-
-    // public void updateGrocery(long id, Grocery replacement){
-    //     //findById returns a type Optional<Grocery>. This helps the developer avoid null pointer
-    //     //exceptions. We can use the method .get() to convert an Optional<Grocery> to Grocery.
-    //     Optional<Grocery> optionalGrocery = groceryRepository.findById(id);
-    //     if(optionalGrocery.isPresent()){
-    //         Grocery grocery = optionalGrocery.get();
-    //         grocery.setName(replacement.getName());
-    //         groceryRepository.save(grocery);
-    //     }
